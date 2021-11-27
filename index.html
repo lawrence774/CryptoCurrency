@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="nav">
+        <span class="logo"><span>Cue</span>Predict</span>
+        <ul>
+            <li>
+                <a href="">About CuePredict</a>
+            </li>
+            <li>
+                <a href="">How it Works</a>
+            </li>
+            <li>
+                <a href="">Crypto News</a>
+            </li>
+            <li>
+                <a href="">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div class="banner">
+            <span>High-Accuracy Forecast for Bitcoin,<br> Etherium and over <br>100 other Cyrptocurrency</span>
+        <!-- <img src="images/cryptocurrency-price-prediction-site.webp" height="100%" width="100%"> -->
+        <div class="marketRate"></div>
+      <div class="heroImageBox">  <img class="bannerPic" src="images/Layer-0-1.png" height="550px" width="350px"data-tilt data-tilt-reverse="true" ></div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="sectionTwo">
+            <div class="sectionTwomain">
+
+            </div>
+            <div class="sectionTwoSide">
+                <div class="newsOne">
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="index.js"></script>
+    <script src="vanilla tillt.js"></script>
+    <script>
+	VanillaTilt.init(document.querySelector(".bannerPic"), {
+		max: 25,
+		speed: 400
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".heroImg"));
+
+        var nav = document.getElementById("nav")
+
+        window.addEventListener('scroll', function(){
+            nav.classList.toggle("sticky", scrollY > 0)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    margin: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s;
+    z-index: 1000;
+}
+
+.sticky{
+    background-color: white;
+    transition: 0.4s;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.233);
+}
+.logo{
+    color: white;
+    font-size: 30;
+    font-weight: bolder;
+    padding-left: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.sticky .logo{
+    color: rgb(11, 25, 68);
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    margin-right: 50px;
+}
+
+li{
+    margin-right: 30px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px ;
+    transition: 0.3s;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.sticky li a{
+    color:rgb(11, 25, 68);
+}
+
+li a:hover{
+   color: rgb(235, 168, 44);
+}
+
+.banner{
+    width: 100%;
+    height: 105vh;
+    background-color: rgb(15,52,92);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-attachment: fixed;
+    background-image: url("/images/cryptocurrency-price-prediction-site.webp");
+    background-size: cover;
+    background-color: rgba(1, 23, 46, 0.842);
+    background-blend-mode: darken;
+  
+}
+
+
+
+.banner span{
+    color: whitesmoke;
+    font-size: 45;
+    font-weight: 900;
+    position: absolute;
+    z-index: 5;
+    bottom: 250px;
+    left: 120px;
+    line-height: 1.5;
+    text-align: center;
+    
+}
+/* 
+.overlay{
+    background-color: rgb(1, 23, 46);
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    opacity: 0.9;
+} */
+
+.marketRate{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;
+    border-bottom: 2px solid whitesmoke;
+}
+
+.heroImageBox{
+    position: sticky;
+    top: 80px;
+    right: 0px;
+    transform: translateX(100vw);
+    animation: 2s bannerPics forwards;
+}
+
+@keyframes  bannerPics{
+    to{
+        transform: translateX(30vw);
+        position: sticky;
+        top: 80px;
+    }
+}
+
+.sectionTwo{
+    display: flex;
+    height: 600px;
+}
+
+.sectionTwoMain{
+    width: 70%;
+}
+
+.sectionTwoSide{
+    width: 30%;
+    border-left: 2px solid whitesmoke;
+}
+
+.newsOne{
+    width: 300px;
+    height: 300px;
+}
