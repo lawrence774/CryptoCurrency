@@ -1,0 +1,1 @@
+a crypto currency prediction website.. helps to predict when to buy and sell digital currencies.
